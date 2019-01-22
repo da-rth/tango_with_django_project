@@ -6,7 +6,7 @@
 {% block body_block %}
     <style>
     .rango {
-        max-width: 600px;
+        width: 35vw;
         border: 2px solid #3d3d3d;
         border-radius: 10px;
     }
@@ -18,13 +18,14 @@
             <h1 class="display-3">Rango says...</h1>
             {% if user.is_authenticated %}
                 <h2>hey there {{ user.username }}!</h2><br/>
-                <h5>Total Visits: {{ visits }}<br/>
-                Last Visit: {{ last_visit }}
-                </h5>
                 <a href="{% url 'add_category' %}">Add a New Category</a>
             {% else %}
                 <h1>hey there partner! </h1>
             {% endif %}
+            <br/>
+            visits: {{ visits }}
+            <br/>
+            Last Visit: {{ last_visit }}
         </div>
         <div class="col-md-6 text-center">
             <img src="{% static "images/rango.jpg" %}" class="rango" alt="Picture of Rango"/>
