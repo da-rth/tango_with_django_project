@@ -5,7 +5,7 @@ This repository is used for the development of the Rango application shown in th
 
 
 
-## Setup
+## Setup the project
 
 ```bash
 # Setup virtual environment
@@ -19,17 +19,22 @@ $ (WIN)  .\venv\Scripts\activate
 # Install requirements & run server
 
 $ pip install -r requirements.txt
+$ python manage.py makemigrations
+$ python manage.py migrate
 $ python manage.py runserver
 ```
 
 
 
-#### Chapter 3 - all tests passed
+## Rango Application Tests
 
-```
-Ran 2 tests in 0.009s
-OK
-```
+Tests taken from [gerac83's rango tests](https://github.com/gerac83/rango_tests)
 
-
-
+- [x] Chapter 3 - 2/2 passed
+- [x] Chapter 4 - 7/7 passed
+- [ ] Chapter 5   - TODO
+- [ ] Chapter 6   - TODO
+- [ ] Chapter 7   - TODO
+- [ ] Chapter 8   - TODO
+- [ ] Chapter 9   - TODO
+- [ ] Chapter 10 - TODO
