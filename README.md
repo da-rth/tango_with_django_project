@@ -1,5 +1,7 @@
-# tango_with_django_project
+# Tango with Django Project
 Tango with Django - Rango Application - UoG 2018/19 WAD2
+
+Example website available [here](http://2086380a.pythonanywhere.com/rango/) for next 3 months, hosted on PythonAnywhere.
 
 ![1548179168507](media/readme_banner.png)
 
