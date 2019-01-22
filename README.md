@@ -24,3 +24,12 @@ $ python manage.py runserver
 
 
 
+#### Chapter 3 - all tests passed
+
+```
+Ran 2 tests in 0.009s
+OK
+```
+
+
+
