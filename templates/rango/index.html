@@ -20,6 +20,7 @@
     <div>
         {% if user.is_authenticated %}
             howdy {{ user.username }}!
+	    <a href="{% url 'add_category' %}">Add a New Category</a>
         {% else %}
             hey there partner!
         {% endif %}
@@ -53,8 +54,7 @@
         {% else %}
             <strong>There are no pages present.</strong>
         {% endif %}
-        <a href="{% url 'add_category' %}">Add a New Category</a>
-        <br/><br/>
+        <br/>
         <img src="{% static "images/rango.jpg" %}" class="rango" alt="Picture of Rango"/>
     </div>
     <div>
