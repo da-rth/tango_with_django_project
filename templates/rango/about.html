@@ -1,4 +1,5 @@
 {% extends 'rango/base.html' %}
+{% load staticfiles %}
 
 {% block title_block %}
     About
@@ -19,6 +20,8 @@
         Long cat says hello.
         <br/><br/>
         <b>{{ message }}</b>
+        <br/>
+        visits: {{ visits }}<br/>
     </p>
     <!-- Media files example -->
     <img src="{{ MEDIA_URL }}cat.jpg" class="cat" alt="Picture of long cat"/>
