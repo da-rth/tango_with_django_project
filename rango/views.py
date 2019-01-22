@@ -25,7 +25,7 @@ def index(request):
     context_dict = {'categories': category_list, 'pages': page_list}
     visitor_cookie_handler(request)
     context_dict['visits'] = request.session['visits']
-    context_dict['last_visit'] = request.session['last_visit']
+    context_dict['last_visit'] = request.session['last_visit'].split('.')[0]
 
     response = render(request, 'rango/index.html', context=context_dict)
     return response
