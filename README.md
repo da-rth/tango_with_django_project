@@ -37,4 +37,7 @@ Tests taken from [gerac83's rango tests](https://github.com/gerac83/rango_tests)
 - [x] Chapter 7   - 6/6 passed
 - [x] Chapter 8   - 7/7 passed
 - [x] Chapter 9   - 6/6 passed
-- [ ] Chapter 10 - TODO
+- [x] Chapter 10 - 4/4 passed
+- [x] Live Server Tests - 22/22 passed
+
+**Total:** 68 passed test cases
