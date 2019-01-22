@@ -33,7 +33,7 @@ Tests taken from [gerac83's rango tests](https://github.com/gerac83/rango_tests)
 - [x] Chapter 3 - 2/2 passed
 - [x] Chapter 4 - 7/7 passed
 - [x] Chapter 5   - 3/3 passed
-- [ ] Chapter 6   - TODO
+- [x] Chapter 6   - 11/11 passed
 - [ ] Chapter 7   - TODO
 - [ ] Chapter 8   - TODO
 - [ ] Chapter 9   - TODO
