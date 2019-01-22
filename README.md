@@ -1,9 +1,9 @@
 # tango_with_django_project
 Tango with Django - Rango Application - UoG 2018/19 WAD2
 
+![1548179168507](media/readme_banner.png)
+
 This repository is used for the development of the Rango application shown in the How to Tango with Django 1.9 Book.
-
-
 
 ## Setup the project
 
