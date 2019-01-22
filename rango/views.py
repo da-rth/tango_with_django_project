@@ -7,6 +7,7 @@ from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
 from datetime import datetime
 from rango.webhose_search import run_query
+from django.utils import timezone
 
 
 def homepage(requeest):
@@ -235,6 +236,8 @@ def track_url(request):
             try:
                 page = Page.objects.get(id=page_id)
                 page.views = page.views + 1
+                page.last_visit = timezone.now()
+
                 print(page.views)
                 page.save()
                 return redirect(page.url)

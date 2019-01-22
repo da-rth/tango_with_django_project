@@ -1,6 +1,7 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 from django.contrib.auth.models import User
+from django.utils import timezone
 
 
 class Category(models.Model):
@@ -23,6 +24,8 @@ class Category(models.Model):
 
 class Page(models.Model):
     max_title_length = 128
+    last_visit = models.DateTimeField(null=True, blank=True)
+    first_visit = models.DateTimeField(default=timezone.now())
     category = models.ForeignKey(Category)
     title = models.CharField(max_length=max_title_length)
     url = models.URLField()
